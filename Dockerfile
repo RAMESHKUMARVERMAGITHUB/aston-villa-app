@@ -12,7 +12,7 @@ RUN npm install
 
 # Copy the application files to the working directory
 COPY . .
-
+RUN npm run build
 # Expose the port that the app will run on
 EXPOSE 4200
 
